@@ -1,14 +1,12 @@
 FROM alpine:3.10
-RUN apk add --no-cache curl postgrey
-
-# taRgrey patch
 COPY src /
-RUN patch /usr/sbin/postgrey /targrey-*.patch
-RUN rm /targrey-*.patch
-
-# update the whitelist, may change every few months
-RUN curl -s https://postgrey.schweikert.ch/pub/postgrey_whitelist_clients > /etc/postfix/postgrey_whitelist_clients
-RUN apk del --no-cache curl
+RUN apk add --no-cache curl postgrey && \
+    # taRgrey patch
+    patch /usr/sbin/postgrey /targrey-*.patch && \
+    rm /targrey-*.patch && \
+    # update the whitelist, may change every few months
+    curl -s https://postgrey.schweikert.ch/pub/postgrey_whitelist_clients > /etc/postfix/postgrey_whitelist_clients && \
+    apk del --no-cache curl
 
 USER postgrey:nogroup
 
