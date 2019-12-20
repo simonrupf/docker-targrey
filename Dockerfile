@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.11
 COPY src /
 RUN apk add --no-cache curl postgrey tzdata && \
     # taRgrey patch
