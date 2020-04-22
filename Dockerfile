@@ -1,6 +1,7 @@
 FROM alpine:3.11
 COPY src /
-RUN apk add --no-cache curl postgrey tzdata && \
+RUN apk upgrade --no-cache && \
+    apk add --no-cache curl postgrey tzdata && \
     # taRgrey patch
     patch /usr/sbin/postgrey /targrey-*.patch && \
     rm /targrey-*.patch && \
