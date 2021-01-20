@@ -2,7 +2,21 @@
 
 S25R + tarpitting + greylisting - a tarpit + greylisting policy server.
 
-http://k2net.hakuba.jp/targrey/index.en.html
+> taRgrey is a patch that makes postgrey into a tarpitting policy server.
+> Tarpitting means response delay for blocking spam.
+> taRgrey is designed to decrease false positives.
+
+-- http://k2net.hakuba.jp/targrey/index.en.html
+
+> The concept of the Selective SMTP Rejection (S25R) anti-spam system, [...] is
+> so simple that a mail server accepts SMTP accesses from mail relay servers
+> but rejects direct SMTP accesses from end-user's computers.
+
+-- http://www.gabacho-net.jp/en/anti-spam/anti-spam-system.html
+
+## Software stack
+
+Postgrey is written for Perl 5.
 
 ## Environment variables
 
