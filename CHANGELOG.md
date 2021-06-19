@@ -1,5 +1,8 @@
 # taRgrey change log
 
+## 0.2.4
+update to Alpine 3.14
+
 ## 0.2.3
 update to Alpine 3.13
 

@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM alpine:3.14
 COPY src /
 RUN apk upgrade --no-cache && \
     apk add --no-cache patch postgrey tzdata && \
