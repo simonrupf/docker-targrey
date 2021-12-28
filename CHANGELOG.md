@@ -1,7 +1,10 @@
 # taRgrey change log
 
+## 0.2.5
+update to Alpine 3.15 / openssl 1.1.1l
+
 ## 0.2.4
-update to Alpine 3.14
+update to Alpine 3.14 / openssl 1.1.1k
 
 ## 0.2.3
 update to Alpine 3.13
