@@ -1,6 +1,7 @@
-FROM alpine:3.15
+FROM alpine:3.16
 COPY src /
-RUN apk upgrade --no-cache && \
+RUN echo https://dl-cdn.alpinelinux.org/alpine/v3.15/main >> /etc/apk/repositories && \
+    apk upgrade --no-cache && \
     apk add --no-cache patch postgrey tzdata && \
     # taRgrey patch
     patch /usr/sbin/postgrey /targrey-*.patch && \

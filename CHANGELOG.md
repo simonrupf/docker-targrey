@@ -1,5 +1,9 @@
 # taRgrey change log
 
+## 0.2.6
+update to Alpine 3.16 / openssl 1.1.1o
+note that the Berkeley DB is from 3.15 repositories, as it got removed in 3.16
+
 ## 0.2.5
 update to Alpine 3.15 / openssl 1.1.1l
 
