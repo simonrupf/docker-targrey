@@ -1,5 +1,9 @@
 # taRgrey change log
 
+## 0.2.7
+update to Alpine 3.18 / openssl 3.1.0
+note that Perl & Berkeley DB are from 3.15 repositories
+
 ## 0.2.6
 update to Alpine 3.16 / openssl 1.1.1o
 note that the Berkeley DB is from 3.15 repositories, as it got removed in 3.16
