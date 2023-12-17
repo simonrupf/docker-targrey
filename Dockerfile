@@ -7,7 +7,7 @@ LABEL org.opencontainers.image.authors="Simon Rupf <simon@rupf.net>" \
 COPY src /
 RUN echo https://dl-cdn.alpinelinux.org/alpine/v3.15/main >> /etc/apk/repositories && \
     apk upgrade --no-cache && \
-    apk add --no-cache patch perl=5.34.0-r1 postgrey tzdata && \
+    apk add --no-cache patch perl=5.34.2-r0 postgrey tzdata && \
     # taRgrey patch
     patch /usr/sbin/postgrey /targrey-*.patch && \
     rm /targrey-*.patch && \
