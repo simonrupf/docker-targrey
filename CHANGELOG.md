@@ -1,5 +1,9 @@
 # taRgrey change log
 
+## 0.2.13
+update to Alpine 3.24 / openssl 3.5.7
+note that Perl & Berkeley DB are from 3.15 repositories
+
 ## 0.2.12
 update to Alpine 3.23 / openssl 3.5.4
 note that Perl & Berkeley DB are from 3.15 repositories
